@@ -113,6 +113,64 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &75819818
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4615376721070224, guid: 603a081e4b0318941938619e28f53718, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615376721070224, guid: 603a081e4b0318941938619e28f53718, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615376721070224, guid: 603a081e4b0318941938619e28f53718, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615376721070224, guid: 603a081e4b0318941938619e28f53718, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.19740583
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615376721070224, guid: 603a081e4b0318941938619e28f53718, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.20681587
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615376721070224, guid: 603a081e4b0318941938619e28f53718, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.25575545
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615376721070224, guid: 603a081e4b0318941938619e28f53718, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9234974
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615376721070224, guid: 603a081e4b0318941938619e28f53718, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 603a081e4b0318941938619e28f53718, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &75819819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1437409652540060, guid: 603a081e4b0318941938619e28f53718,
+    type: 2}
+  m_PrefabInternal: {fileID: 75819818}
+--- !u!114 &75819820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 75819819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddc6e51f4c341e4583390fca3343c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &340656728
 GameObject:
   m_ObjectHideFlags: 0

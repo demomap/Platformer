@@ -10,6 +10,8 @@ public class PlayerController1 : MonoBehaviour {
     private Collider m_collider;
     private float collide4r_radius = 0.0F;
     public float gronded_epsilon = 0.05F;
+    bool get_key_down_space = false;
+    float get_axis_horizontal;
     public int user_layer_platform;
 	// Use this for initialization
 	void Start () {
@@ -21,12 +23,13 @@ public class PlayerController1 : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-
+        get_axis_horizontal = Input.GetAxis("Horizontal");
+        get_key_down_space = Input.GetKey(KeyCode.Space);
     }
 
     private void FixedUpdate()
     {
-        float movement = Input.GetAxis("Horizontal");
+        float movement = get_axis_horizontal;
         m_rb.AddForce(new Vector3(movement * speed, 
             0.0F, 0.0F));
         m_rb.velocity = new Vector3(
@@ -34,8 +37,11 @@ public class PlayerController1 : MonoBehaviour {
             m_rb.velocity.y,
             m_rb.velocity.z
             );
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
+        
+        if (get_key_down_space && isGrounded())
+        
             m_rb.AddForce(0.0F, jump_height, 0.0F);
+        
     }
     bool isGrounded()
     {
